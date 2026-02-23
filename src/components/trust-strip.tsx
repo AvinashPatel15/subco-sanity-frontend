@@ -1,28 +1,41 @@
-import { ShieldCheck, Award, Users, ClipboardCheck, Timer } from "lucide-react";
+import Image from "next/image";
 
-const trustItems = [
-  { icon: ShieldCheck, label: "ISO Certified" },
-  { icon: Award, label: "PE Stamped" },
-  { icon: ClipboardCheck, label: "Full QA/QC" },
-  { icon: Users, label: "Licensed Engineers" },
-  { icon: Timer, label: "Fast Turnaround" },
+const logos = [
+  { src: "/ENERGYCO.svg", alt: "EnergyCo" },
+  { src: "/PACIFIC BLUE.svg", alt: "Pacific Blue" },
+  { src: "/PETROVEX.svg", alt: "Petrovex" },
+  { src: "/AEROSTREAM.svg", alt: "Aerostream" },
+  { src: "/MECHCORE.svg", alt: "Mechcore" },
 ];
 
 export function TrustStrip() {
   return (
-    <section className="border-y border-border bg-card py-6">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-8 px-6 sm:gap-12">
-        {trustItems.map((item) => (
-          <div
-            key={item.label}
-            className="flex items-center gap-2.5 text-muted-foreground"
-          >
-            <item.icon className="size-4 shrink-0" />
-            <span className="font-mono text-xs font-medium uppercase tracking-wider">
-              {item.label}
-            </span>
-          </div>
-        ))}
+    <section className="border-y border-border bg-card py-8 lg:py-10">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 lg:flex-row lg:gap-16">
+        {/* Left — Label + Description */}
+        <div className="shrink-0 lg:max-w-[240px]">
+          <span className="mb-2 block font-mono text-[10px] font-bold uppercase tracking-[3px] text-muted-foreground">
+            Trusted by
+          </span>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            Delivering engineering excellence for global energy leaders and
+            maritime innovators.
+          </p>
+        </div>
+
+        {/* Right — Company Logos */}
+        <div className="flex flex-1 flex-wrap items-center justify-center gap-10 lg:justify-between lg:gap-8">
+          {logos.map((logo) => (
+            <Image
+              key={logo.alt}
+              src={logo.src}
+              alt={logo.alt}
+              width={140}
+              height={32}
+              className="h-6 w-auto opacity-50 grayscale"
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

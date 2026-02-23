@@ -11,7 +11,7 @@ const logos = [
 export function TrustStrip() {
   return (
     <section className="border-y border-border bg-card py-8 lg:py-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 lg:flex-row lg:gap-16">
+      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-8 px-6 lg:flex-row lg:gap-16">
         {/* Left — Label + Description */}
         <div className="shrink-0 lg:max-w-[240px]">
           <span className="mb-2 block font-mono text-[10px] font-bold uppercase tracking-[3px] text-muted-foreground">

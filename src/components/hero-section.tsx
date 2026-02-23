@@ -13,7 +13,7 @@ export function HeroSection() {
         <span>04</span>
       </div>
 
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16">
+      <div className="mx-auto grid max-w-[1440px] items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16">
         {/* Left Column */}
         <div className="flex flex-col gap-6">
           <span className="inline-flex w-fit items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-foreground/70">
@@ -24,7 +24,7 @@ export function HeroSection() {
           <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[3.5rem]">
             Engineering Workload,
             <br />
-            <span className="italic text-foreground">Taken-Off Your Plate</span>
+            <span className="italic text-[#9CA3AF]">Taken-Off Your Plate</span>
           </h1>
 
           <p className="max-w-md text-base leading-relaxed text-muted-foreground">

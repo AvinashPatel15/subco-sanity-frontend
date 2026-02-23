@@ -59,7 +59,7 @@ const capabilities = [
 export function CapabilitiesSection() {
   return (
     <section id="capabilities" className="bg-secondary/30 py-20 lg:py-28">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1440px] px-6">
         {/* Section Heading */}
         <div className="mb-14">
           <span className="mb-3 inline-block font-mono text-[10px] font-bold uppercase tracking-[3px] text-accent-blue">

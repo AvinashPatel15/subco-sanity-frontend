@@ -40,8 +40,8 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section id="process" className="bg-background py-20 lg:py-28">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="process" className="bg-card py-20 lg:py-28">
+      <div className="mx-auto max-w-[1440px] px-6">
         {/* Section Heading */}
         <div className="mb-20 text-center">
           <span className="mb-4 inline-block font-mono text-xs font-bold uppercase tracking-[3px] text-accent-blue">

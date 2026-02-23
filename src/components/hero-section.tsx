@@ -44,14 +44,14 @@ export function HeroSection() {
         </div>
 
         {/* Right Column — Blueprint Card Stack */}
-        <div className="relative flex min-h-[380px] items-center justify-center lg:justify-end">
+        <div className="relative flex min-h-[480px] items-center justify-center lg:justify-end">
           {/* Main blueprint card — positioned at top-right */}
           <Image
             src="/Main blueprint card.svg"
             alt="Core Blueprint - Step 02: Ownership"
             width={380}
             height={280}
-            className="absolute right-0 top-0 w-full max-w-[340px] lg:max-w-[380px]"
+            className="absolute right-0 top-0 w-full max-w-[440px] lg:max-w-[480px]"
             priority
           />
 
@@ -61,7 +61,7 @@ export function HeroSection() {
             alt="Certification of Ownership"
             width={280}
             height={240}
-            className="absolute bottom-0 left-0 z-20 w-[280px] sm:left-4 lg:left-0"
+            className="absolute bottom-0 left-0 z-20 w-[380px] sm:left-4 lg:left-0"
           />
         </div>
       </div>
